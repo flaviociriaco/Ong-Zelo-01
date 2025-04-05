@@ -1,0 +1,65 @@
+/* Estilos para garantir a mesma altura nas seções */
+.secao-altura-igual {
+    min-height: 500px; /* Ajuste este valor conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-altura-igual > .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajuste para o banner, que geralmente ocupa a tela */
+.banner {
+    min-height: 400px; /* Ajuste conforme desejado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Estilos adicionais para melhorar a visualização */
+#sobre .container .row > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px; /* Garante uma altura mínima para o conteúdo "Sobre" */
+}
+
+#projetos .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#projetos .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contato .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px; /* Garante uma altura mínima para o formulário de contato */
+}
+
+.mapa {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa iframe {
+    height: 100%;
+}
