@@ -1,12 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #00eeff;
+    /* Azul */
+    --cor-secundaria: #28a745;
+    /* Verde */
+    --cor-de-fundo: #f8f9fa;
+    /* Cinza claro */
+    --cor-texto: #0a0c51;
+    /* azul-escuro*/
+}
+
+header {
+    background-color: var(--cor-primaria);
+}
+
+header .logo {
+    width: 200px;
+}
+
+.nav-link {
+    color: var(--cor-texto);
+    font-size: 20px;
+}
+
+.formulario-contato {
+    max-height: 200px;
+    max-width: 400px;
+}
+
 /* Estilos para garantir a mesma altura nas seções */
 .secao-altura-igual {
-    min-height: 500px; /* Ajuste este valor conforme necessário */
+    min-height: 500px;
+    /* Ajuste este valor conforme necessário */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.secao-altura-igual > .container {
+.secao-altura-igual>.container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -15,7 +51,8 @@
 
 /* Ajuste para o banner, que geralmente ocupa a tela */
 .banner {
-    min-height: 400px; /* Ajuste conforme desejado */
+    min-height: 400px;
+    /* Ajuste conforme desejado */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,11 +64,12 @@
 }
 
 /* Estilos adicionais para melhorar a visualização */
-#sobre .container .row > div {
+#sobre .container .row>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 300px; /* Garante uma altura mínima para o conteúdo "Sobre" */
+    min-height: 300px;
+    /* Garante uma altura mínima para o conteúdo "Sobre" */
 }
 
 #projetos .card {
@@ -50,16 +88,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 400px; /* Garante uma altura mínima para o formulário de contato */
+    min-height: 400px;
+    /* Garante uma altura mínima para o formulário de contato */
 }
 
-.mapa {
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#mapa-container {
+    width: 100%;
+    height: 400px; /* Ajuste a altura conforme necessário */
 }
 
-.mapa iframe {
-    height: 100%;
+
+/* Media query para telas menores (sm mobile) */
+@media (max-width: 768px) {
+    .banner {
+        align-items: flex-start;
+        /* Ou flex-end, dependendo do que você deseja */
+        min-height: auto;
+        /* Ajuste a altura conforme necessário em mobile */
+    }
 }
