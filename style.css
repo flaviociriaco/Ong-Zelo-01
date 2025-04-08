@@ -105,7 +105,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 300px;
+  
     /* Garante uma altura mínima para o conteúdo "Sobre" */
 }
 
@@ -126,7 +126,7 @@ i {
     flex-direction: column;
     justify-content: center;
     min-height: 400px;
-    background-color: #989393;
+   
     /* Garante uma altura mínima para o formulário de contato */
 }
 
