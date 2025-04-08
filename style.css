@@ -16,21 +16,54 @@
 }
 
 header {
-    background-color: var(--cor-primaria);
+    background-color:var(--cor-secundaria);
 }
 
 header .logo {
     width: 200px;
 }
 
+section {
+    color: var(--cor-texto);
+}
+.sobre {
+    background-color: var(--cor-secundaria);
+}
+
+.sobre-texto {
+    text-align: justify;
+}
+
+.btn-form {
+  
+    font-weight: 600;
+}
+
 .nav-link {
     color: var(--cor-texto);
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .formulario-contato {
     max-height: 200px;
     max-width: 400px;
+}
+
+ .mapa {
+    background-color: var(--cor-primaria);
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+}
+footer p {
+    color: var(--cor-texto);
+}
+
+i {
+    font-size: 1.5rem;
+    color: var(--cor-texto);
 }
 
 /* Estilos para garantir a mesma altura nas seções */
@@ -63,6 +96,10 @@ header .logo {
     height: 100%;
 }
 
+.contato {
+    background-color: var(--cor-secundaria);
+}
+
 /* Estilos adicionais para melhorar a visualização */
 #sobre .container .row>div {
     display: flex;
@@ -89,6 +126,7 @@ header .logo {
     flex-direction: column;
     justify-content: center;
     min-height: 400px;
+    background-color: #989393;
     /* Garante uma altura mínima para o formulário de contato */
 }
 
